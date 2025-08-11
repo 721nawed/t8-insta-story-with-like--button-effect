@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    /* background-color: #e1e1e1; */
+    background-image: url(/instagrambg.webp);
+    background-size: cover;
+    /* background-position: center; */
+    object-position: 20% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.container{
+    position: relative;
+    height: 500px;
+    width: 320px;
+    background-color: #fff;
+    box-shadow: 20px 20px 50px black;
+    border-radius: 20px;
+    
+}
+
+.stories{
+    height: 120px;
+    padding: 10px 5px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    user-select: none;
+
+}
+
+
+
+.stories::-webkit-scrollbar{
+    display: none;
+}
+
+.stories {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+.story-head {
+    width: 80px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 5px;
+    user-select: none;
+}
+
+.story {
+    height: 80px;
+    width: 80px;
+    background: linear-gradient(to right top, orange, red, blueviolet);
+    border-radius: 50%;
+     overflow: hidden;
+     padding: 3px;
+}
+
+.story-head h1 {
+    font-size: 15px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.story img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 20%;
+    border-radius: 50%;
+   
+}
+
+img{
+    height:320px;
+    width: 100%;
+    display: block;
+}
+
+
+.like-div{
+    height: 60px;
+    width: 100%;
+    /* background-color: red; */
+    border-radius: 20px;
+}
+
+.fulscr{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+   display: none;
+}
+
+.container>i{
+    font-size: 90px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50% , -50%) scale(0);
+    color: #fff;
+    opacity: 0;
+    transition: transform 0.2s ease;
+}
+
+.like-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.like-share{
+    display: flex;
+    align-items: center;
+}
+
+.like-share i{
+    font-size: 40px;
+}
+
+.like-share img{
+    height: 45px;
+    width: 45px;
+}
+
+#comment{
+    height: 38px;
+    width: 38px;
+}
+
+.save img{
+    height: 45px;
+    width: 45px;
+}
